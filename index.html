@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stima Inclinazione Capo</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0077cc">
+</head>
+<body>
+    <h1>Stima Inclinazione Capo - PWA</h1>
+    <p>Pagina vuota di avvio PWA.</p>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                    console.log('Service Worker registrato con successo con scope:', registration.scope);
+                }, function(err) {
+                    console.log('Registrazione Service Worker fallita:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

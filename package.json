@@ -1,0 +1,19 @@
+{
+  "name": "stima-inclinazione-capo",
+  "version": "1.0.0",
+  "description": "PWA per stimare l'inclinazione del capo da foto frontale",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@mediapipe/face_mesh": "latest",
+    "bcryptjs": "latest",
+    "pdf-lib": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}
