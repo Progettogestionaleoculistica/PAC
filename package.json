@@ -1,19 +1,19 @@
 {
-  "name": "stima-inclinazione-capo",
+  "name": "pac-pwa",
   "version": "1.0.0",
-  "description": "PWA per stimare l'inclinazione del capo da foto frontale",
+  "description": "PWA project for head tilt estimation",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@mediapipe/face_mesh": "latest",
-    "bcryptjs": "latest",
-    "pdf-lib": "latest"
+    "@mediapipe/tasks-vision": "^0.10.3",
+    "pdf-lib": "^1.17.1",
+    "bcryptjs": "^2.4.3"
   },
   "devDependencies": {
-    "vite": "latest"
+    "vite": "^4.3.9"
   }
 }

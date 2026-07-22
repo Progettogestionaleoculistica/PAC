@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stima Inclinazione Capo</title>
+    <title>Head Tilt Estimator</title>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0077cc">
+    <meta name="theme-color" content="#004080">
 </head>
 <body>
-    <h1>Stima Inclinazione Capo - PWA</h1>
-    <p>Pagina vuota di avvio PWA.</p>
+    <h1>Head Tilt Estimator - PWA</h1>
+    <script src="service-worker.js"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-                    console.log('Service Worker registrato con successo con scope:', registration.scope);
-                }, function(err) {
-                    console.log('Registrazione Service Worker fallita:', err);
-                });
-            });
-        }
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
     </script>
 </body>
 </html>

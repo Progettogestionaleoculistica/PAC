@@ -1,11 +1,10 @@
 {
-  "name": "Stima Inclinazione Capo",
-  "short_name": "InclinazioneCapo",
+  "name": "Head Tilt Estimator",
+  "short_name": "TiltEstimator",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0077cc",
-  "description": "App PWA per stimare inclinazione del capo da foto frontale.",
+  "theme_color": "#004080",
   "icons": [
     {
       "src": "src/assets/icons/icon-192.png",
